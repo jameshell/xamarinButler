@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:com.butler1"
+             x:Class="com.butler1.MainPage" Title="Yo soy el master" MasterBehavior="Popover">
+
+	<Label Text="Welcome to Xamarin Forms!" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" />
+
+    <MasterDetailPage.Master>
+        <ContentPage Padding="10" BackgroundColor="Black" Title="Master">
+            <ContentPage.Content>
+
+                <StackLayout Margin="5,30,5,5">
+                    <Label Text="Menu" TextColor="White" HorizontalOptions="CenterAndExpand" Font="23"></Label>
+                    <ListView x:Name="itemList">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ImageCell TextColor="White" DetailColor="Gray" Text="{Binding Title}" ImageSource="{Binding IconSource}"/>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+                
+            </ContentPage.Content> 
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <ContentPage Padding="10" Title="Detail">
+            <ContentPage.Content>
+
+                <StackLayout Margin="5,30,5,5">
+                    <Label Text="Detail Page"></Label>
+                </StackLayout>
+
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+
+
+
+
+
+
+</MasterDetailPage>

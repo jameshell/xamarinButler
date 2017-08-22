@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="com.butler1.Page1" Title="Pag 1">
+    <ContentPage.Content>
+        <StackLayout>
+          
+        <Label Text="Pagina numero 1">
+        </Label>
+            <Button Text="Ir a Pag 1-A " TextColor="AntiqueWhite" BackgroundColor="Black" BorderColor="Black" Clicked="Button_Clicked">
+                
+            </Button>
+            
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
